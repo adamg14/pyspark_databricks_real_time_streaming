@@ -56,6 +56,5 @@ def purchase_event():
 if __name__ == "__main__":
     while True:
         import random
-        time.sleep(random.randint(1, 5))
-        
+        time.sleep(random.randint(1, 5))        
         purchase_event()
