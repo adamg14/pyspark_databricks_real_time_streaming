@@ -5,10 +5,29 @@ import random
 import uuid
 import datetime
 from kafka import KafkaProducer
+from dotenv import load_dotenv
+import os
 
-producer = KafkaProducer(
-    bootstrap_servers="localhost:9092",
-    value_serializer= lambda value: json.dumps(value).encode()
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../.env"))
+
+API_KEY = os.getenv("API_KEY")
+API_SECRET = os.getenv("API_SECRET")
+
+CONFLUENT_CONFIG = {
+    "bootstrap_servers": "pkc-l6wr6.europe-west2.gcp.confluent.cloud:9092",
+    "security_protocol": "SASL_SSL",
+    "sasl_mechanism": "PLAIN",
+    "sasl_plain_username": API_KEY,
+    "sasl_plain_password": API_SECRET
+}
+
+kafka_producer = KafkaProducer(
+    bootstrap_servers=CONFLUENT_CONFIG["bootstrap_servers"],
+    security_protocol=CONFLUENT_CONFIG["security_protocol"],
+    sasl_mechanism=CONFLUENT_CONFIG["sasl_mechanism"],
+    sasl_plain_username=CONFLUENT_CONFIG["sasl_plain_username"],
+    sasl_plain_password=CONFLUENT_CONFIG["sasl_plain_password"],
+    value_serializer=lambda value: json.dumps(value).encode("utf-8")
 )
 
 def purchase_event():
@@ -24,7 +43,14 @@ def purchase_event():
         "event_datetime": datetime.datetime.now().isoformat(),
         "channel": random.choice(channels)
     }
-    producer.send(event)
+    try:
+
+        kafka_producer.send("purchase_events", event)
+        kafka_producer.flush()
+        print("")
+    except Exception as e:
+        print(f"Error sending event: {e}")
+
 
 if __name__ == "__main__":
     while True:
