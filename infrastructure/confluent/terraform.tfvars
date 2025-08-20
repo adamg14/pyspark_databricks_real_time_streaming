@@ -1,0 +1,2 @@
+confluent_cloud_api_key    = "64YNDFZ74ULUNPC3"
+confluent_cloud_api_secret = "cflt37oaQjO86i7PcwHj6Ap67ICvMEo698z5xDOo2nFrfgOrrJg9sMlF2e6BxGLQ"
