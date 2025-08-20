@@ -12,10 +12,10 @@ load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../.env"))
 
 API_KEY = os.getenv("API_KEY")
 API_SECRET = os.getenv("API_SECRET")
+BOOTSTRAP_SERVERS = os.getenv("BOOTSTRAP_SERVERS")
 
-print(API_KEY)
 CONFLUENT_CONFIG = {
-    "bootstrap_servers": "pkc-l6wr6.europe-west2.gcp.confluent.cloud:9092",
+    "bootstrap_servers": BOOTSTRAP_SERVERS,
     "security_protocol": "SASL_SSL",
     "sasl_mechanism": "PLAIN",
     "sasl_plain_username": API_KEY,
@@ -32,6 +32,7 @@ kafka_producer = KafkaProducer(
 )
 
 def purchase_event():
+    print("Generating event...")
     currencies = ["USD", "GBP", "EUR"]
     channels = ["Amazon", "Google", "eBay", "Meta", "TikTok", "Email", "Affilliate"]
     event = {
@@ -45,8 +46,8 @@ def purchase_event():
         "channel": random.choice(channels)
     }
     try:
-
-        kafka_producer.send("purchase_event", event)
+        print("Sending event...")
+        kafka_producer.send("purchase_events", event)
         kafka_producer.flush()
         print("Kafka message sent successfully.")
     except Exception as e:
@@ -55,6 +56,5 @@ def purchase_event():
 
 if __name__ == "__main__":
     while True:
-        import random
-        time.sleep(random.randint(1, 5))        
+        time.sleep(random.randint(1, 5))
         purchase_event()

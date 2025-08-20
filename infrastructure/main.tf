@@ -40,8 +40,8 @@ resource "confluent_service_account" "producer" {
 # role binding - this gives the serive account the permission to create a topic within the created cluster
 resource "confluent_role_binding" "producer_topic_access" {
     principal = "User:${confluent_service_account.producer.id}"
-    role_name = "DeveloperManager"
-    crn_pattern = "${confluent_kafka_cluster.standard.rbac_crn}/kafka=${confluent_kafka_cluster.standard.id}/topic=*"
+    role_name = "CloudClusterAdmin"
+    crn_pattern = confluent_kafka_cluster.standard.rbac_crn
 }
 
 # Kafka Topic
@@ -64,6 +64,7 @@ resource "confluent_kafka_topic" "purchase_events" {
     # retain messages for 1 day
     "retention.ms" = "86400000"
   }
+  depends_on = [confluent_role_binding.producer_topic_access]
 }
 
 # Using the above service account to manage the Kafka Cluster
