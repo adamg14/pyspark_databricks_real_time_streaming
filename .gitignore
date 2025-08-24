@@ -1,3 +1,5 @@
 .env
 infrastructure/confluent/terraform.tfvars
-infrastructure/confluent/terraform.tfvars
+infrastructure/confluent/.terraform
+infrastructure/gcp/variables.tf
+infrastructure/.terraform
