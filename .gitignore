@@ -1,0 +1,8 @@
+.env
+infrastructure/confluent/terraform.tfvars
+infrastructure/confluent/.terraform
+infrastructure/gcp/variables.tf
+infrastructure/.terraform/
+infrastructure/gcp/.terraform
+infrastructure/gcp/.terraform.lock.hcl
+infrastructure/databricks/main.tf
