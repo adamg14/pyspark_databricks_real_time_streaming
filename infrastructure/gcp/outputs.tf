@@ -14,6 +14,6 @@ output "gcs_bucket" {
 }
 
 output "service_account" {
-    value = google_service_account.databricks.email
+    value = google_service_account.databricks.sa2.email
     description = "Service account email"
 }
