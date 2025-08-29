@@ -1,19 +1,14 @@
-output "databricks_workspace_url" {
-    value = google_databricks_workspace.db_workspace.workspace_url
-    description = "Workspace URL"
+output "workspace_id" {
+    description = "Databricks workspace ID"
+    value = databricks_mws_workspaces.this.id
 }
 
-output "databricks_workspace_id" {
-    value = google_databricks_workspace.db_workspace.workspace_id
-    description = "Workspace ID"
+output "workspace_url" {
+    description = "Databricks URL Workspace"
+    value = databricks_mws_workspaces.this.workspace_url
 }
 
-output "gcs_bucket" {
-    value = google_storage_bucket.databricks_storage_bucket.name
-    description = "GCS Bucket Name"
-}
-
-output "service_account" {
-    value = google_service_account.databricks.sa2.email
-    description = "Service account email"
+output "gcp_workspace_service_account" {
+    description = "Serveice account for the databricks workspace created by databricks"
+    value = databricks_mws_workspaces.this.gcp_workspace_sa
 }
