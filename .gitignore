@@ -6,3 +6,7 @@ infrastructure/.terraform/
 infrastructure/gcp/.terraform
 infrastructure/gcp/.terraform.lock.hcl
 infrastructure/databricks/main.tf
+infrastructure/gcp/debug.log
+infrastructure/gcp/databricks-key.json
+infrastructure/gcp/terraform.tfstate.backup
+infrastructure/databricks/variables.tf
