@@ -14,14 +14,14 @@ orders_schema = StructType([
 
 @dlt.table(
     name = "bronze_orders",
-    comment = "Raw order data ingested from Confluent Cloud (Kafka value as JSON string)"
-    table_properties={"quality": "Bronze"}
+    comment = "Raw order data ingested from Confluent Cloud (Kafka value as JSON string)",
+    table_properties={"quality": "Bronze"},
 )
 def bronze_orders():
     bootstrap = dbutils.secrets.get("confluent", "confluent_bootstrap")
     api_key = dbutils.secrets.get("confluent", "confluent_api_key")
     api_secret = dbutils.secrets.get("confluent", "confluent_api_secret")
-    topic = dlt.conf.get("kafka.topic", "purchase_event")
+    topic = spark.conf.get("kafka.topic", "purchase_event")
     jaas = f'org.apache.kafka.common.security.plain.PlainLoginModule required username="{api_key}" password="{api_secret}";'
     
     raw_order_stream = (
