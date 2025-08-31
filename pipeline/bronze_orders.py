@@ -14,7 +14,7 @@ orders_schema = StructType([
 
 @dlt.table(
     name = "bronze_orders",
-    comment = "Raw order data ingested from Confluent Cloud (Kafka value as JSON string)"
+    comment = "Raw order data ingested from Confluent Cloud (Kafka value as JSON string)",
     table_properties={"quality": "Bronze"}
 )
 def bronze_orders():
