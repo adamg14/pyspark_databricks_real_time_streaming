@@ -1,0 +1,19 @@
+services:
+  redpanda:
+    image: redpandadata/redpanda:v23.3.21
+    command: 
+      - redpanda start --overprovisioned --smp 1 --memory 1G --reserve-memory 0M  --node-id 0 --check=false
+    ports:
+      # KAFKA PORT
+      - "9092:9092"
+      # ADMIN PORT
+      - "9644:9644"
+  console:
+    image: redpandadata/console:latest
+    depends_on: [redpanda]
+    environment:
+      REDPANDA_BROKERS: redpanda:9092
+      REDPANDA_ADMIN_API: redpanda:9644
+    ports:
+      - "8080:8080"
+      
