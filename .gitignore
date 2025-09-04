@@ -10,3 +10,4 @@ infrastructure/gcp/debug.log
 infrastructure/gcp/databricks-key.json
 infrastructure/gcp/terraform.tfstate.backup
 infrastructure/databricks/variables.tf
+pipeline/data/
