@@ -50,7 +50,24 @@ try:
         .format("console") \
         .start()
     
-    query.awaitTermination(30)
+    query.awaitTermination(10)
     query.stop()
+
+    try:
+        # continous streaming job
+        kafka_stream_write = kafka_stream \
+            .writeStream \
+            .format("delta") \
+            .outputMode("append") \
+            .option("checkpointLocation", f"{bronze_path}/_checkpoints") \
+            .option("path", bronze_path) \
+            .start()
+
+        print("Continous ingestion to Delta Lake...")
+        kafka_stream_write.awaitTermination()
+        
+    except Exception as e:
+        print(f"An error occurred with the continous streaming of kafka messages: {e}")
+    
 except Exception as e:
     print(f"An error occurred: {e}")
