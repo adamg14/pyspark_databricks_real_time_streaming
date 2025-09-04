@@ -5,6 +5,7 @@ services:
     ports:
     # port for other docker containers
       - "9092:9092"
+      # ports for external connections (python script )
       - "19092:19092"
     environment:
       - KAFKA_CFG_NODE_ID=1

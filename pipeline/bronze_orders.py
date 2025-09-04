@@ -1,8 +1,14 @@
-import dlt
-import json
-from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType
+from pyspark.sql import SparkSession
+from delta import configure_spark_with_delta_pip
+from pyspark.sql.types import (
+    StructField,
+    StructType,
+    StringType,
+    IntegerType,
+    DoubleType
+)
 
-orders_schema = StructType([
+purchase_event_schema = StructType([
     StructField("order_id", StringType()),
     StructField("user_id", IntegerType()),
     StructField("product_id", IntegerType()),
@@ -12,30 +18,43 @@ orders_schema = StructType([
     StructField("channel", StringType())
 ])
 
-@dlt.table(
-    name = "bronze_orders",
-    comment = "Raw order data ingested from Confluent Cloud (Kafka value as JSON string)",
-    table_properties={"quality": "Bronze"},
+
+# Spark + Delta session defintion
+builder = (
+    SparkSession.builder.master("local[*]") \
+    .appName("medallion-architecture") \
+    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
+    .config("spark.sql.catalog.spark_catalog",  "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .config("spark.jars.packages", "org.apache.kafka:kafka-clients:3.5.1")
 )
-def bronze_orders():
-    bootstrap = dbutils.secrets.get("confluent", "confluent_bootstrap")
-    api_key = dbutils.secrets.get("confluent", "confluent_api_key")
-    api_secret = dbutils.secrets.get("confluent", "confluent_api_secret")
-    topic = spark.conf.get("kafka.topic", "purchase_event")
-    jaas = f'org.apache.kafka.common.security.plain.PlainLoginModule required username="{api_key}" password="{api_secret}";'
-    
-    raw_order_stream = (
-        spark.readStream \
-            .format("kafka") \
-            .option("kafka.bootstrap.servers", bootstrap) \
-            .option("subscribe", topic) \
-            .option("startingOffsets", "earliest") \
-            .option("kafka.security.protocols", "SASL_SSL") \
-            .option("kafka.sasl.mechanism", "PLAIN") \
-            .option("kafka.sasl.jaas.config", jaas) \
-            .option("kafka.ssl.endpoint.identification.algorithm", "https") \
-            .load()
+
+spark = configure_spark_with_delta_pip(builder).getOrCreate()
+spark.sparkContext.setLogLevel("WARN")
+
+# data paths
+bronze_path = "data/delta/bronze_orders"
+
+try:
+    # reading data from the kafka stream and storing it as a JSON string in the bronze delta table
+    raw_orders = (
+        spark.readStream.format("kafka") \
+        .option("kafka.bootstrap.servers", "localhost:19092") \
+        .option("subscribe", "purchase_events") \
+        .option("startingOffsets", "earliest") \
+        .load() \
+        .selectExpr("CAST(value AS STRING) AS JSON")
     )
 
-    # the bronze table stores the original data stream as a JSON string
-    return raw_order_stream.selectExpr("CAST(value AS STRING) AS json")
+    print("Kafka data message stream captured by Pyspark")
+    print(f"Stream schema: {raw_orders.schema}")
+
+    raw_orders_query = raw_orders.writeStream \
+        .outputMode("append") \
+        .format("console") \
+        .start()
+
+    raw_orders_query.awaitTermination(30)
+    raw_orders_query.stop()
+except Exception as e:
+    print(f"error: {e}")
