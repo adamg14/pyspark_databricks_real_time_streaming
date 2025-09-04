@@ -16,7 +16,7 @@ print(f"Pyspark version: {pyspark.__version__}")
 builder = (
     SparkSession.builder \
         .master("local[*]") \
-        .appName("medallion-architecture") \
+        .appName("medallion_ingestion") \
         .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
         .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
         .config("spark.jars.packages",
@@ -65,7 +65,7 @@ try:
 
         print("Continous ingestion to Delta Lake...")
         kafka_stream_write.awaitTermination()
-        
+
     except Exception as e:
         print(f"An error occurred with the continous streaming of kafka messages: {e}")
     
