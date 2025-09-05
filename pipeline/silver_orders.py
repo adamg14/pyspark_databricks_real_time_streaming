@@ -2,6 +2,21 @@
 import pyspark
 from pyspark.sql import SparkSession
 from bronze_orders import bronze_path
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType
+
+
+silver_schema =  StructType(
+    [
+        StructField("order_id", StringType()),
+        StructType("user_id", IntegerType()),
+        StructType("product_id", IntegerType()),
+        StructType("price", DoubleType()),
+        StructType("currency", StringType()),
+        StructType("event_datetime", ),
+        StructField("channel", StringType())
+    ]
+)
+silver_path = "data/delta/silver_orders"
 
 builder = (
     SparkSession.builder.master("local[*]")
@@ -14,7 +29,6 @@ builder = (
 spark = builder.getOrCreate()
 
 bronze_orders = spark.read.format("delta").load(bronze_path)
-
 print(f"bronze order delta table schema: {bronze_orders.printSchema()}")
 
 print(f"delta table head: {bronze_orders.show()}")
