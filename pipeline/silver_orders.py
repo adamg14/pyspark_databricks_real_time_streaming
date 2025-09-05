@@ -1,18 +1,18 @@
-# read and write from the bronze orders delta table
+# creating a silver order delta table that enforces a defined schema 
 import pyspark
 from pyspark.sql import SparkSession
 from bronze_orders import bronze_path
-from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType
-
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType, TimestampType
+import pyspark.sql.functions as F
 
 silver_schema =  StructType(
     [
         StructField("order_id", StringType()),
-        StructType("user_id", IntegerType()),
-        StructType("product_id", IntegerType()),
-        StructType("price", DoubleType()),
-        StructType("currency", StringType()),
-        StructType("event_datetime", ),
+        StructField("user_id", IntegerType()),
+        StructField("product_id", IntegerType()),
+        StructField("price", DoubleType()),
+        StructField("currency", StringType()),
+        StructField("event_datetime", TimestampType()),
         StructField("channel", StringType())
     ]
 )
@@ -27,8 +27,34 @@ builder = (
 )
 
 spark = builder.getOrCreate()
+spark.sparkContext.setLogLevel("ERROR")
 
 bronze_orders = spark.read.format("delta").load(bronze_path)
-print(f"bronze order delta table schema: {bronze_orders.printSchema()}")
 
-print(f"delta table head: {bronze_orders.show()}")
+silver_orders = bronze_orders.select(
+    F.from_json("json_data", silver_schema) \
+        .alias("parsed_json"),
+    F.col("timestamp") \
+        .alias("ingested_timestamp")
+).select(
+    F.col("parsed_json.order_id").alias("order_id"),
+    F.col("parsed_json.user_id").alias("user_id"),
+    F.col("parsed_json.product_id").alias("product_id"),
+    F.col("parsed_json.price").alias("price"),
+    F.col("parsed_json.currency").alias("currency"),
+    F.col("parsed_json.event_datetime").alias("event_timestamp"),
+    F.col("parsed_json.channel").alias("channel")
+    F.col("ingested_timestamp")
+)
+
+print("Writing to silver orders...")
+silver_orders.write \
+    .format("delta") \
+    .mode("overwrite") \
+    .option("overwriteSchema", "true") \
+    .save(silver_path)
+print("Delta table written to successfully")
+
+silver_orders = spark.read.format("delta").load(silver_path)
+print(f"silver delta table head: {silver_orders.show()}")
+print(f"silver delta table schema: {silver_orders.printSchema()}")

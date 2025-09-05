@@ -12,62 +12,67 @@ from pyspark.sql.types import (
 
 print(f"Pyspark version: {pyspark.__version__}")
 
-# required packages for setting up the correct spark session
-builder = (
-    SparkSession.builder \
-        .master("local[*]") \
-        .appName("medallion_ingestion") \
-        .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
-        .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
-        .config("spark.jars.packages",
-                "io.delta:delta-spark_2.12:3.2.0,"
-                "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,"
-                "org.apache.kafka:kafka-clients:3.5.1")
-)
-
-spark = builder.getOrCreate()
-spark.sparkContext.setLogLevel("WARN")
-
 # data path
 bronze_path = "data/delta/bronze_orders"
 
-try:
-    kafka_stream = (
-        spark.readStream \
-        .format("kafka") \
-        .option("kafka.bootstrap.servers", "localhost:19092") \
-        .option("subscribe", "purchase_events") \
-        .option("startingOffsets", "earliest") \
-        .load() \
-        .selectExpr("CAST(value AS STRING) AS json_data", "timestamp")
+
+def bronze_ingestion():
+    # required packages for setting up the correct spark session
+    builder = (
+        SparkSession.builder \
+            .master("local[*]") \
+            .appName("medallion_ingestion") \
+            .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
+            .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
+            .config("spark.jars.packages",
+                    "io.delta:delta-spark_2.12:3.2.0,"
+                    "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,"
+                    "org.apache.kafka:kafka-clients:3.5.1")
     )
 
-    print("Kafka data stream captured.")
-
-    query = kafka_stream \
-        .writeStream \
-        .outputMode("append") \
-        .format("console") \
-        .start()
-    
-    query.awaitTermination(10)
-    query.stop()
+    spark = builder.getOrCreate()
+    spark.sparkContext.setLogLevel("WARN")
 
     try:
-        # continous streaming job
-        kafka_stream_write = kafka_stream \
+        kafka_stream = (
+            spark.readStream \
+            .format("kafka") \
+            .option("kafka.bootstrap.servers", "localhost:19092") \
+            .option("subscribe", "purchase_events") \
+            .option("startingOffsets", "earliest") \
+            .load() \
+            .selectExpr("CAST(value AS STRING) AS json_data", "timestamp")
+        )
+
+        print("Kafka data stream captured.")
+
+        query = kafka_stream \
             .writeStream \
-            .format("delta") \
             .outputMode("append") \
-            .option("checkpointLocation", f"{bronze_path}/_checkpoints") \
-            .option("path", bronze_path) \
+            .format("console") \
             .start()
+        
+        query.awaitTermination(10)
+        query.stop()
 
-        print("Continous ingestion to Delta Lake...")
-        kafka_stream_write.awaitTermination()
+        try:
+            # continous streaming job
+            kafka_stream_write = kafka_stream \
+                .writeStream \
+                .format("delta") \
+                .outputMode("append") \
+                .option("checkpointLocation", f"{bronze_path}/_checkpoints") \
+                .option("path", bronze_path) \
+                .start()
 
+            print("Continous ingestion to Delta Lake...")
+            kafka_stream_write.awaitTermination()
+
+        except Exception as e:
+            print(f"An error occurred with the continous streaming of kafka messages: {e}")
+        
     except Exception as e:
-        print(f"An error occurred with the continous streaming of kafka messages: {e}")
-    
-except Exception as e:
-    print(f"An error occurred: {e}")
+        print(f"An error occurred: {e}")
+
+if __name__ == '__main__':
+    bronze_ingestion()
