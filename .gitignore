@@ -12,3 +12,5 @@ infrastructure/gcp/terraform.tfstate.backup
 infrastructure/databricks/variables.tf
 pipeline/data/
 postgres_data/
+plugins/
+scripts/
