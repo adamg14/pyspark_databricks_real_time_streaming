@@ -38,31 +38,46 @@ services:
       - POSTGRES_DB=airflow
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow -d airflow"]
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
+
   
   # redis in memory database for celery executor
   redis:
     image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
   
   airflow-init:
+    image: apache/airflow:2.8.0
+    container_name: airflow-init
     environment:
-    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
-    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
-    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
-    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
-  volumes:
-    - ./dags:/opt/airflow/dags
-    - ./ingestion:/opt/airflow/ingestion
-    - ./pipeline:/opt/airflow/pipeline
-    - ./config:/opt/airflow/config
-    - ./logs:/opt/airflow/logs
-    - ./plugins:/opt/airflow/plugins
-  command: >
-    bash -c "airflow db init && 
-    airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin"
-  depends_on:
-    - postgres
-    - redis
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./ingestion:/opt/airflow/ingestion
+      - ./pipeline:/opt/airflow/pipeline
+      - ./config:/opt/airflow/config
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    command: >
+      bash -c "airflow db init && 
+      airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
   airflow-webserver:
     image: apache/airflow:2.8.0
     environment:
@@ -81,11 +96,16 @@ services:
       - ./plugins:/opt/airflow/plugins
     ports:
       - "8081:8081"
-    command: webserver
+    command: >
+      bash -c "until airflow db check; do echo 'Waiting for database...'; sleep 5; done && 
+      airflow webserver --port 8081"
     depends_on:
-      - postgres
-      - redis
-      - airflow-init
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
   
   airflow-scheduler:
     image: apache/airflow:2.8.0
@@ -102,12 +122,16 @@ services:
       - ./config:/opt/airflow/config
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-    command: scheduler
+    command: >
+      bash -c "until airflow db check; do echo 'Waiting for database...'; sleep 5; done && 
+      airflow scheduler"
     depends_on:
-      - postgres
-      - redis
-      - airflow-webserver
-      - airflow-init
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
 
   airflow-worker:
     image: apache/airflow:2.8.0
@@ -123,12 +147,16 @@ services:
       - ./config:/opt/airflow/config
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-    command: celery worker
+    command: >
+      bash -c "until airflow db check; do echo 'Waiting for database...'; sleep 5; done && 
+      celery worker"
     depends_on:
-      - postgres
-      - redis
-      - airflow-scheduler
-      - airflow-init
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
 
   # spark-master:
   #   build:
