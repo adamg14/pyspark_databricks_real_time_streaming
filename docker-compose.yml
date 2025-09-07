@@ -29,52 +29,128 @@ services:
     environment:
       - KAFKA_CLUSTERS_0_NAME=localhost
       - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092
+
+  postgres:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
   
-  spark-master:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: spark-master
-    command: bin/spark-class org.apache.spark.deploy.master.Master -h spark-master
+  # redis in memory database for celery executor
+  redis:
+    image: redis:7-alpine
+  
+  airflow-webserver:
+    image: apache/airflow:2.8.0
+    environment:
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'false'
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./ingestion:/opt/airflow/ingestion
+      - ./pipeline:/opt/airflow/pipeline
+      - ./config:/opt/airflow/config
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
     ports:
       - "8081:8081"
-      - "7077:7077"
-    environment:
-      - SPARK_MASTER_HOST=spark-master
-    volumes:
-      - ./ingestion/:/app/ingestion
-      - ./pipeline/:/app/pipeline
-      - ./data/:/app/data
+    command: webserver
+    depends_on:
+      - postgres
+      - redis
   
-  spark-worker:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: spark-worker
-    command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
-    depends_on:
-      - spark-master
+  airflow-scheduler:
+    image: apache/airflow:2.8.0
     environment:
-      - SPARK_WORKER_CORES=2
-      - SPARK_WORKER_MEMORY=2g
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     volumes:
-      - ./ingestion/:/app/ingestion
-      - ./pipeline/:/app/pipeline
-      - ./data/:/app/data
-
-  bronze-ingestion:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: bronze-ingestion
+      - ./dags:/opt/airflow/dags
+      - ./ingestion:/opt/airflow/ingestion
+      - ./pipeline:/opt/airflow/pipeline
+      - ./config:/opt/airflow/config
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    command: scheduler
     depends_on:
-      - spark-worker
-      - kafka
+      - postgres
+      - redis
+      - airflow-webserver
+  airflow-worker:
+    image: apache/airflow:2.8.0
+    environment:
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     volumes:
-      - ./ingestion/:/app/ingestion
-      - ./pipeline/:/app/pipeline
-      - ./data/:/app/data
-    command: spark-submit --master spark://spark-master:7077 scripts/bronze_ingestion.py
+      - ./dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
+      - ./config:/opt/airflow/config
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    command: celery worker
+    depends_on:
+      - postgres
+      - redis
+      - airflow-scheduler
+
+  # spark-master:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: spark-master
+  #   command: bin/spark-class org.apache.spark.deploy.master.Master -h spark-master
+  #   ports:
+  #     - "8081:8081"
+  #     - "7077:7077"
+  #   environment:
+  #     - SPARK_MASTER_HOST=spark-master
+  #   volumes:
+  #     - ./ingestion/:/app/ingestion
+  #     - ./pipeline/:/app/pipeline
+  #     - ./data/:/app/data
+  
+  # spark-worker:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: spark-worker
+  #   command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+  #   depends_on:
+  #     - spark-master
+  #   environment:
+  #     - SPARK_WORKER_CORES=2
+  #     - SPARK_WORKER_MEMORY=2g
+  #   volumes:
+  #     - ./ingestion/:/app/ingestion
+  #     - ./pipeline/:/app/pipeline
+  #     - ./data/:/app/data
+
+  # bronze-ingestion:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: bronze-ingestion
+  #   depends_on:
+  #     - spark-worker
+  #     - kafka
+  #   volumes:
+  #     - ./ingestion/:/app/ingestion
+  #     - ./pipeline/:/app/pipeline
+  #     - ./data/:/app/data
+  #   command: spark-submit --master spark://spark-master:7077 scripts/bronze_ingestion.py
   
 
 networks:
