@@ -46,6 +46,7 @@ def bronze_ingestion():
 
         print("Kafka data stream captured.")
 
+        # log to the terminal
         query = kafka_stream \
             .writeStream \
             .outputMode("append") \
@@ -66,7 +67,9 @@ def bronze_ingestion():
                 .start()
 
             print("Continous ingestion to Delta Lake...")
-            kafka_stream_write.awaitTermination()
+            kafka_stream_write.awaitTermination(120000)
+            kafka_stream_write.stop()
+            spark.stop()
 
         except Exception as e:
             print(f"An error occurred with the continous streaming of kafka messages: {e}")

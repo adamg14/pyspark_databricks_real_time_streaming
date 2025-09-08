@@ -16,3 +16,12 @@ This project takes simulated realtime purchase order data using an Apache Kafka 
 - Airflow - Orchastration
 - AI/ML
 - Databricks
+
+
+## Commands
+Running the containerised version of the pipeline, for development and local testing:
+```bash
+docker-compose run -d postgres
+docker-compose run -d redis
+docker-compose up -build
+```

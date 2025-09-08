@@ -1,6 +1,13 @@
 from airflow import DAG
 from airflow.operators.dummy import DummyOperator
+from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from pipeline.bronze_orders import bronze_ingestion
 
 default_args = {
     "owner": "Adam Worede",
@@ -20,7 +27,22 @@ with DAG("data_pipeline",
          catchup=False,
          tags=["kafka", "spark", "delta"]
          ) as dag:
-    pipeline_start = DummyOperator(task_id="pipeline_start")
-    pipeline_end = DummyOperator(task_id="pipeline_end")
+    
+    pipeline_start = DummyOperator(
+        task_id="pipeline_start",
+        dag=dag
+    )
+    
+    bronze_orders = PythonOperator(
+        task_id = "bronze_orders",
+        python_callable=bronze_ingestion,
+        dag=dag
+    )
 
-    pipeline_start >> pipeline_end
+    pipeline_end = DummyOperator(
+        task_id="pipeline_end",
+        dag=dag
+    )
+
+    pipeline_start >> bronze_ingestion
+    bronze_ingestion >> pipeline_end
