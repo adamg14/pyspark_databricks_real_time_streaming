@@ -18,43 +18,49 @@ silver_schema =  StructType(
 )
 silver_path = "data/delta/silver_orders"
 
-builder = (
-    SparkSession.builder.master("local[*]")
-    .appName("bronze-analysis")
-    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
-    .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
-    .config("spark.jars.packages", "io.delta:delta-spark_2.12:3.2.0")  
-)
 
-spark = builder.getOrCreate()
-spark.sparkContext.setLogLevel("ERROR")
+def schema_enforment():
 
-bronze_orders = spark.read.format("delta").load(bronze_path)
+    builder = (
+        SparkSession.builder.master("local[*]")
+        .appName("bronze-analysis")
+        .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
+        .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+        .config("spark.jars.packages", "io.delta:delta-spark_2.12:3.2.0")  
+    )
 
-silver_orders = bronze_orders.select(
-    F.from_json("json_data", silver_schema) \
-        .alias("parsed_json"),
-    F.col("timestamp") \
-        .alias("ingested_timestamp")
-).select(
-    F.col("parsed_json.order_id").alias("order_id"),
-    F.col("parsed_json.user_id").alias("user_id"),
-    F.col("parsed_json.product_id").alias("product_id"),
-    F.col("parsed_json.price").alias("price"),
-    F.col("parsed_json.currency").alias("currency"),
-    F.col("parsed_json.event_datetime").alias("event_timestamp"),
-    F.col("parsed_json.channel").alias("channel")
-    F.col("ingested_timestamp")
-)
+    spark = builder.getOrCreate()
+    spark.sparkContext.setLogLevel("ERROR")
 
-print("Writing to silver orders...")
-silver_orders.write \
-    .format("delta") \
-    .mode("overwrite") \
-    .option("overwriteSchema", "true") \
-    .save(silver_path)
-print("Delta table written to successfully")
+    bronze_orders = spark.read.format("delta").load(bronze_path)
 
-silver_orders = spark.read.format("delta").load(silver_path)
-print(f"silver delta table head: {silver_orders.show()}")
-print(f"silver delta table schema: {silver_orders.printSchema()}")
+    silver_orders = bronze_orders.select(
+        F.from_json("json_data", silver_schema) \
+            .alias("parsed_json"),
+        F.col("timestamp") \
+            .alias("ingested_timestamp")
+    ).select(
+        F.col("parsed_json.order_id").alias("order_id"),
+        F.col("parsed_json.user_id").alias("user_id"),
+        F.col("parsed_json.product_id").alias("product_id"),
+        F.col("parsed_json.price").alias("price"),
+        F.col("parsed_json.currency").alias("currency"),
+        F.col("parsed_json.event_datetime").alias("event_timestamp"),
+        F.col("parsed_json.channel").alias("channel")
+        F.col("ingested_timestamp")
+    )
+
+    print("Writing to silver orders...")
+    silver_orders.write \
+        .format("delta") \
+        .mode("overwrite") \
+        .option("overwriteSchema", "true") \
+        .save(silver_path)
+    print("Delta table written to successfully")
+
+    silver_orders = spark.read.format("delta").load(silver_path)
+    print(f"silver delta table head: {silver_orders.show()}")
+    print(f"silver delta table schema: {silver_orders.printSchema()}")
+
+if __name__ == '__main__':
+    schema_enforment()
