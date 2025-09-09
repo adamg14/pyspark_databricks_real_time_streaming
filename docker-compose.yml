@@ -55,14 +55,16 @@ services:
       retries: 5
   
   airflow-init:
-    image: apache/airflow:2.8.0
+    build: .
     container_name: airflow-init
+    user: root
     environment:
       AIRFLOW__CORE__EXECUTOR: CeleryExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
       AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
       AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
     volumes:
       - ./dags:/opt/airflow/dags
       - ./ingestion:/opt/airflow/ingestion
@@ -71,9 +73,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
     command: >
-      bash -c "apt-get update && apt-get install -y openjdk-11-jdk &&
-      pip install pyspark==3.5.1 delta-spark==3.2.0 &&
-      airflow db init && 
+      bash -c "airflow db init && 
       airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin"
     depends_on:
       postgres:
@@ -81,7 +81,7 @@ services:
       redis:
         condition: service_healthy
   airflow-webserver:
-    image: apache/airflow:2.8.0
+    build: .
     environment:
       AIRFLOW__CORE__EXECUTOR: CeleryExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
@@ -110,7 +110,7 @@ services:
         condition: service_completed_successfully
   
   airflow-scheduler:
-    image: apache/airflow:2.8.0
+    build: .
     environment:
       AIRFLOW__CORE__EXECUTOR: CeleryExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
@@ -136,7 +136,7 @@ services:
         condition: service_completed_successfully
 
   airflow-worker:
-    image: apache/airflow:2.8.0
+    build: .
     environment:
       AIRFLOW__CORE__EXECUTOR: CeleryExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
