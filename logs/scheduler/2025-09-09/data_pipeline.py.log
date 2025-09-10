@@ -174,3 +174,2170 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'pyspark'
 [2025-09-09T00:05:34.074+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
 [2025-09-09T00:05:34.214+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.286 seconds
+[2025-09-09T01:47:55.711+0000] {processor.py:161} INFO - Started process (PID=25) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:47:55.753+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:47:55.982+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:47:55.979+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:48:07.481+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:48:08.213+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:48:07.696+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:48:08.238+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:48:09.716+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 14.280 seconds
+[2025-09-09T01:48:41.423+0000] {processor.py:161} INFO - Started process (PID=26) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:48:41.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:48:41.856+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:48:41.853+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:48:48.457+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:48:48.579+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:48:48.541+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:48:48.601+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:48:54.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 13.278 seconds
+[2025-09-09T01:49:27.771+0000] {processor.py:161} INFO - Started process (PID=27) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:49:27.796+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:49:27.908+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:49:27.894+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:49:31.796+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:49:31.873+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:49:31.848+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:49:31.878+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:49:32.451+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 4.818 seconds
+[2025-09-09T01:50:03.223+0000] {processor.py:161} INFO - Started process (PID=28) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:50:03.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:50:03.325+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:50:03.305+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:50:05.836+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:50:05.888+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:50:05.862+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:50:05.905+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:50:06.681+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 3.633 seconds
+[2025-09-09T01:50:37.390+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:50:37.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:50:37.503+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:50:37.501+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:50:39.216+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:50:39.256+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:50:39.243+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:50:39.276+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:50:39.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.457 seconds
+[2025-09-09T01:51:10.224+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:51:10.246+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:51:10.277+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:51:10.275+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:51:12.047+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:51:12.109+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:51:12.079+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:51:12.116+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:51:12.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.624 seconds
+[2025-09-09T01:51:44.670+0000] {processor.py:161} INFO - Started process (PID=31) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:51:44.691+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:51:44.732+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:51:44.728+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:51:46.262+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:51:46.294+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:51:46.281+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:51:46.300+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:51:46.749+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.132 seconds
+[2025-09-09T01:52:17.243+0000] {processor.py:161} INFO - Started process (PID=32) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:52:17.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:52:17.280+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:52:17.279+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:52:19.106+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:52:19.138+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:52:19.125+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:52:19.154+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:52:19.481+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.288 seconds
+[2025-09-09T01:52:50.010+0000] {processor.py:161} INFO - Started process (PID=33) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:52:50.032+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:52:50.091+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:52:50.090+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:52:52.357+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:52:52.415+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:52:52.390+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:52:52.439+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:52:53.049+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 3.155 seconds
+[2025-09-09T01:53:25.168+0000] {processor.py:161} INFO - Started process (PID=34) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:53:25.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:53:25.723+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:53:25.702+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:53:32.312+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:53:32.483+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:53:32.459+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:53:32.510+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:53:34.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 9.967 seconds
+[2025-09-09T01:54:04.926+0000] {processor.py:161} INFO - Started process (PID=35) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:54:04.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:54:05.006+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:54:04.992+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:54:07.707+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:54:07.769+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:54:07.741+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:54:07.785+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:54:08.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 3.605 seconds
+[2025-09-09T01:54:39.185+0000] {processor.py:161} INFO - Started process (PID=36) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:54:39.219+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:54:39.362+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:54:39.332+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:54:41.129+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:54:41.175+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:54:41.157+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:54:41.182+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:54:41.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.496 seconds
+[2025-09-09T01:55:12.032+0000] {processor.py:161} INFO - Started process (PID=37) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:55:12.043+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:55:12.096+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:55:12.091+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:55:13.171+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:55:13.202+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:55:13.181+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:55:13.208+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:55:13.428+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.450 seconds
+[2025-09-09T01:55:44.630+0000] {processor.py:161} INFO - Started process (PID=38) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:55:44.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:55:44.671+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:55:44.665+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:55:45.621+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:55:45.650+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:55:45.632+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:55:45.653+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:55:46.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.447 seconds
+[2025-09-09T01:56:16.378+0000] {processor.py:161} INFO - Started process (PID=39) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:56:16.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:56:16.440+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:56:16.439+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:56:18.514+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:56:18.550+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:56:18.539+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:56:18.572+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:56:19.088+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.775 seconds
+[2025-09-09T01:56:50.107+0000] {processor.py:161} INFO - Started process (PID=40) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:56:50.154+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:56:50.215+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:56:50.210+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:56:52.063+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:56:52.121+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:56:52.093+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:56:52.140+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:56:52.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.715 seconds
+[2025-09-09T01:57:23.643+0000] {processor.py:161} INFO - Started process (PID=41) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:57:23.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:57:23.696+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:57:23.694+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:57:24.816+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:57:24.867+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:57:24.842+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:57:24.875+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:57:25.316+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.732 seconds
+[2025-09-09T01:57:56.107+0000] {processor.py:161} INFO - Started process (PID=42) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:57:56.125+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:57:56.154+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:57:56.152+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:57:57.497+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:57:57.554+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:57:57.531+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:57:57.559+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:57:57.879+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.833 seconds
+[2025-09-09T01:58:28.308+0000] {processor.py:161} INFO - Started process (PID=43) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:58:28.331+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:58:28.369+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:58:28.366+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:58:30.535+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:58:30.573+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:58:30.545+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:58:30.590+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:58:31.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.962 seconds
+[2025-09-09T01:59:01.653+0000] {processor.py:161} INFO - Started process (PID=44) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:59:01.703+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:59:01.755+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:59:01.741+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:59:03.592+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:59:03.652+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:59:03.628+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:59:03.662+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:59:04.288+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.727 seconds
+[2025-09-09T01:59:35.927+0000] {processor.py:161} INFO - Started process (PID=45) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:59:35.952+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T01:59:36.020+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:59:36.017+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:59:38.053+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T01:59:38.110+0000] {logging_mixin.py:188} INFO - [2025-09-09T01:59:38.091+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T01:59:38.118+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T01:59:38.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.790 seconds
+[2025-09-09T02:00:09.387+0000] {processor.py:161} INFO - Started process (PID=46) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:00:09.392+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:00:09.441+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:00:09.439+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:00:10.425+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:00:10.476+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:00:10.454+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:00:10.481+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:00:10.941+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.609 seconds
+[2025-09-09T02:00:43.746+0000] {processor.py:161} INFO - Started process (PID=47) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:00:44.054+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:00:44.328+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:00:44.325+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:00:48.230+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:00:48.264+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:00:48.254+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:00:48.269+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:00:48.825+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 5.491 seconds
+[2025-09-09T02:01:19.272+0000] {processor.py:161} INFO - Started process (PID=48) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:01:19.288+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:01:19.312+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:01:19.309+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:01:21.005+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:01:21.031+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:01:21.024+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:01:21.035+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:01:21.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.263 seconds
+[2025-09-09T02:01:52.590+0000] {processor.py:161} INFO - Started process (PID=49) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:01:52.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:01:52.650+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:01:52.646+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:01:54.183+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:01:54.237+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:01:54.212+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:01:54.243+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:01:54.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.079 seconds
+[2025-09-09T02:02:25.541+0000] {processor.py:161} INFO - Started process (PID=50) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:02:25.573+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:02:25.651+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:02:25.645+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:02:28.176+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:02:28.250+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:02:28.227+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:02:28.256+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:02:29.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 3.809 seconds
+[2025-09-09T02:03:00.065+0000] {processor.py:161} INFO - Started process (PID=51) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:03:00.112+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:03:00.208+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:03:00.193+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:03:05.421+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:03:05.926+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:03:05.828+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:03:06.120+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:03:08.086+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 8.271 seconds
+[2025-09-09T02:03:39.688+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:03:39.695+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:03:39.744+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:03:39.742+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:03:41.336+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:03:41.399+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:03:41.368+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:03:41.408+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:03:42.142+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.493 seconds
+[2025-09-09T02:04:13.720+0000] {processor.py:161} INFO - Started process (PID=53) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:04:13.842+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:04:14.124+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:04:14.118+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:04:17.592+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:04:17.632+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:04:17.609+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:04:17.639+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:04:18.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 4.854 seconds
+[2025-09-09T02:04:49.083+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:04:49.105+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:04:49.139+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:04:49.135+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:04:51.016+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:04:51.051+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:04:51.030+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:04:51.058+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:04:51.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.709 seconds
+[2025-09-09T02:05:22.772+0000] {processor.py:161} INFO - Started process (PID=55) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:05:22.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:05:22.799+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:05:22.796+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:05:23.804+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:05:23.879+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:05:23.850+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:05:23.888+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:05:24.547+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.803 seconds
+[2025-09-09T02:05:55.106+0000] {processor.py:161} INFO - Started process (PID=56) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:05:55.120+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:05:55.177+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:05:55.174+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:05:56.619+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:05:56.641+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:05:56.629+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:05:56.645+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:05:56.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.910 seconds
+[2025-09-09T02:06:27.630+0000] {processor.py:161} INFO - Started process (PID=57) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:06:27.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:06:27.662+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:06:27.659+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:06:28.660+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:06:28.692+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:06:28.678+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:06:28.697+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:06:29.207+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.613 seconds
+[2025-09-09T02:07:00.216+0000] {processor.py:161} INFO - Started process (PID=58) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:07:00.305+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:07:00.481+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:07:00.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:07:02.512+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:07:02.553+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:07:02.526+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:07:02.569+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:07:03.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 3.426 seconds
+[2025-09-09T02:07:34.995+0000] {processor.py:161} INFO - Started process (PID=59) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:07:35.066+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:07:35.314+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:07:35.173+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:07:40.695+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:07:40.815+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:07:40.758+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:07:40.869+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:07:42.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 8.112 seconds
+[2025-09-09T02:08:14.152+0000] {processor.py:161} INFO - Started process (PID=60) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:08:14.155+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:08:14.179+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:08:14.177+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:08:15.533+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:08:15.556+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:08:15.540+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:08:15.559+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:08:15.809+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.691 seconds
+[2025-09-09T02:08:47.420+0000] {processor.py:161} INFO - Started process (PID=61) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:08:47.440+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:08:47.503+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:08:47.497+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:08:49.152+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:08:49.184+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:08:49.173+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:08:49.191+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:08:49.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.425 seconds
+[2025-09-09T02:09:20.396+0000] {processor.py:161} INFO - Started process (PID=62) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:09:20.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:09:20.479+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:09:20.475+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:09:21.781+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:09:21.811+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:09:21.801+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:09:21.819+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:09:22.025+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.849 seconds
+[2025-09-09T02:09:52.571+0000] {processor.py:161} INFO - Started process (PID=63) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:09:52.587+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:09:52.606+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:09:52.605+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:09:53.314+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:09:53.342+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:09:53.326+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:09:53.349+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:09:53.535+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.009 seconds
+[2025-09-09T02:10:24.067+0000] {processor.py:161} INFO - Started process (PID=64) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:10:24.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:10:24.109+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:10:24.102+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:10:25.318+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:10:25.350+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:10:25.330+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:10:25.355+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:10:25.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.595 seconds
+[2025-09-09T02:10:56.262+0000] {processor.py:161} INFO - Started process (PID=65) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:10:56.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:10:56.301+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:10:56.299+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:10:58.216+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:10:58.244+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:10:58.228+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:10:58.248+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:10:58.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.489 seconds
+[2025-09-09T02:11:29.220+0000] {processor.py:161} INFO - Started process (PID=66) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:11:29.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:11:29.268+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:11:29.265+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:11:30.343+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:11:30.370+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:11:30.361+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:11:30.377+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:11:31.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.066 seconds
+[2025-09-09T02:12:02.559+0000] {processor.py:161} INFO - Started process (PID=67) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:12:02.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:12:02.689+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:12:02.677+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:12:06.063+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:12:06.115+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:12:06.088+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:12:06.119+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:12:06.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 4.411 seconds
+[2025-09-09T02:12:37.361+0000] {processor.py:161} INFO - Started process (PID=68) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:12:37.369+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:12:37.394+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:12:37.392+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:12:38.074+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:12:38.111+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:12:38.092+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:12:38.115+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:12:38.419+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.083 seconds
+[2025-09-09T02:13:09.180+0000] {processor.py:161} INFO - Started process (PID=69) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:13:09.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:13:09.237+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:13:09.235+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:13:10.380+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:13:10.503+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:13:10.479+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:13:10.509+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:13:10.853+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.720 seconds
+[2025-09-09T02:13:41.210+0000] {processor.py:161} INFO - Started process (PID=70) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:13:41.220+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:13:41.247+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:13:41.243+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:13:42.397+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:13:42.433+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:13:42.417+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:13:42.443+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:13:42.805+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.708 seconds
+[2025-09-09T02:14:13.079+0000] {processor.py:161} INFO - Started process (PID=71) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:14:13.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:14:13.139+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:14:13.137+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:14:14.388+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:14:14.655+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:14:14.448+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:14:14.672+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:14:15.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.098 seconds
+[2025-09-09T02:14:46.141+0000] {processor.py:161} INFO - Started process (PID=72) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:14:46.155+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:14:46.181+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:14:46.177+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:14:47.267+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:14:47.295+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:14:47.287+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:14:47.298+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:14:47.586+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.549 seconds
+[2025-09-09T02:15:18.188+0000] {processor.py:161} INFO - Started process (PID=73) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:15:18.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:15:18.216+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:15:18.215+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:15:18.820+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:15:18.851+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:15:18.844+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:15:18.853+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:15:19.177+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.031 seconds
+[2025-09-09T02:15:50.102+0000] {processor.py:161} INFO - Started process (PID=74) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:15:50.111+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:15:50.128+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:15:50.125+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:15:50.661+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:15:50.683+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:15:50.672+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:15:50.687+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:15:50.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.815 seconds
+[2025-09-09T02:16:21.165+0000] {processor.py:161} INFO - Started process (PID=75) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:16:21.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:16:21.186+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:16:21.184+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:16:21.665+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:16:21.682+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:16:21.674+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:16:21.686+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:16:21.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.716 seconds
+[2025-09-09T02:16:52.764+0000] {processor.py:161} INFO - Started process (PID=76) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:16:52.773+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:16:52.789+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:16:52.786+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:16:53.316+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:16:53.334+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:16:53.323+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:16:53.338+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:16:53.523+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.841 seconds
+[2025-09-09T02:17:24.213+0000] {processor.py:161} INFO - Started process (PID=77) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:17:24.218+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:17:24.233+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:17:24.231+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:17:24.770+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:17:24.787+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:17:24.780+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:17:24.790+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:17:24.937+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.750 seconds
+[2025-09-09T02:17:55.511+0000] {processor.py:161} INFO - Started process (PID=78) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:17:55.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:17:55.529+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:17:55.528+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:17:55.981+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:17:55.995+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:17:55.988+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:17:55.997+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:17:56.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.636 seconds
+[2025-09-09T02:18:26.460+0000] {processor.py:161} INFO - Started process (PID=79) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:18:26.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:18:26.477+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:18:26.475+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:18:26.781+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:18:26.791+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:18:26.787+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:18:26.793+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:18:26.891+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.455 seconds
+[2025-09-09T02:18:57.630+0000] {processor.py:161} INFO - Started process (PID=80) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:18:57.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:18:57.649+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:18:57.648+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:18:58.078+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:18:58.109+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:18:58.088+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:18:58.114+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:18:58.334+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.723 seconds
+[2025-09-09T02:19:28.840+0000] {processor.py:161} INFO - Started process (PID=81) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:19:28.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:19:28.852+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:19:28.851+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:19:29.111+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:19:29.120+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:19:29.116+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:19:29.122+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:19:29.229+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.401 seconds
+[2025-09-09T02:20:00.283+0000] {processor.py:161} INFO - Started process (PID=82) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:20:00.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:20:00.409+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:20:00.399+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:20:02.102+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:20:02.114+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:20:02.109+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:20:02.117+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:20:02.430+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.316 seconds
+[2025-09-09T02:20:32.833+0000] {processor.py:161} INFO - Started process (PID=83) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:20:32.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:20:32.849+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:20:32.847+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:20:33.311+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:20:33.322+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:20:33.317+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:20:33.325+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:20:33.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.638 seconds
+[2025-09-09T02:21:03.660+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:21:03.664+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:21:03.679+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:21:03.678+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:21:04.591+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:21:04.601+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:21:04.596+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:21:04.602+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:21:04.760+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.114 seconds
+[2025-09-09T02:21:35.166+0000] {processor.py:161} INFO - Started process (PID=85) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:21:35.170+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:21:35.184+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:21:35.183+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:21:35.579+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:21:35.593+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:21:35.587+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:21:35.596+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:21:35.716+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.565 seconds
+[2025-09-09T02:22:06.193+0000] {processor.py:161} INFO - Started process (PID=86) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:22:06.199+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:22:06.211+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:22:06.210+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:22:06.592+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:22:06.603+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:22:06.599+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:22:06.605+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:22:06.721+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.542 seconds
+[2025-09-09T02:22:37.339+0000] {processor.py:161} INFO - Started process (PID=87) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:22:37.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:22:37.354+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:22:37.354+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:22:37.865+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:22:37.881+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:22:37.873+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:22:37.884+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:22:38.017+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.697 seconds
+[2025-09-09T02:23:08.420+0000] {processor.py:161} INFO - Started process (PID=88) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:23:08.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:23:08.451+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:23:08.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:23:08.996+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:23:09.020+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:23:09.009+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:23:09.023+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:23:09.379+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.004 seconds
+[2025-09-09T02:23:40.005+0000] {processor.py:161} INFO - Started process (PID=89) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:23:40.011+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:23:40.026+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:23:40.023+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:23:40.403+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:23:40.413+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:23:40.409+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:23:40.415+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:23:40.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.557 seconds
+[2025-09-09T02:24:11.209+0000] {processor.py:161} INFO - Started process (PID=90) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:24:11.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:24:11.237+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:24:11.235+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:24:11.883+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:24:11.931+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:24:11.906+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:24:11.939+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:24:12.362+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.177 seconds
+[2025-09-09T02:24:42.685+0000] {processor.py:161} INFO - Started process (PID=91) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:24:42.692+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:24:42.702+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:24:42.701+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:24:43.231+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:24:43.245+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:24:43.237+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:24:43.248+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:24:43.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.724 seconds
+[2025-09-09T02:25:13.950+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:25:13.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:25:13.964+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:25:13.962+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:25:14.299+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:25:14.312+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:25:14.308+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:25:14.314+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:25:14.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.493 seconds
+[2025-09-09T02:25:44.732+0000] {processor.py:161} INFO - Started process (PID=93) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:25:44.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:25:44.742+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:25:44.741+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:25:45.058+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:25:45.070+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:25:45.065+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:25:45.073+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:25:45.182+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.464 seconds
+[2025-09-09T02:26:15.721+0000] {processor.py:161} INFO - Started process (PID=94) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:26:15.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:26:15.757+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:26:15.756+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:26:16.213+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:26:16.224+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:26:16.218+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:26:16.228+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:26:16.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.642 seconds
+[2025-09-09T02:26:46.795+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:26:46.799+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:26:46.811+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:26:46.810+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:26:47.157+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:26:47.166+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:26:47.162+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:26:47.167+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:26:47.284+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.505 seconds
+[2025-09-09T02:27:17.879+0000] {processor.py:161} INFO - Started process (PID=96) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:27:17.882+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:27:17.894+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:27:17.893+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:27:18.271+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:27:18.285+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:27:18.278+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:27:18.288+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:27:18.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.548 seconds
+[2025-09-09T02:27:48.909+0000] {processor.py:161} INFO - Started process (PID=97) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:27:48.915+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:27:48.931+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:27:48.927+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:27:49.289+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:27:49.305+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:27:49.300+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:27:49.306+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:27:49.420+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.526 seconds
+[2025-09-09T02:28:19.949+0000] {processor.py:161} INFO - Started process (PID=98) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:28:19.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:28:19.964+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:28:19.962+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:28:20.363+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:28:20.378+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:28:20.369+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:28:20.380+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:28:20.489+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.556 seconds
+[2025-09-09T02:28:50.566+0000] {processor.py:161} INFO - Started process (PID=99) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:28:50.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:28:50.579+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:28:50.578+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:28:50.918+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:28:50.934+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:28:50.927+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:28:50.937+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:28:51.242+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.690 seconds
+[2025-09-09T02:29:21.432+0000] {processor.py:161} INFO - Started process (PID=100) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:29:21.436+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:29:21.445+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:29:21.443+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:29:22.014+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:29:22.036+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:29:22.020+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:29:22.038+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:29:22.254+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.836 seconds
+[2025-09-09T02:29:52.332+0000] {processor.py:161} INFO - Started process (PID=101) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:29:52.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:29:52.344+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:29:52.343+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:29:52.657+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:29:52.687+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:29:52.674+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:29:52.690+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:29:52.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.512 seconds
+[2025-09-09T02:30:23.332+0000] {processor.py:161} INFO - Started process (PID=102) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:30:23.339+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:30:23.361+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:30:23.357+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:30:23.908+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:30:23.932+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:30:23.924+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:30:23.934+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:30:24.305+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.996 seconds
+[2025-09-09T02:30:55.278+0000] {processor.py:161} INFO - Started process (PID=103) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:30:55.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:30:55.296+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:30:55.294+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:30:55.758+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:30:55.771+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:30:55.764+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:30:55.774+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:30:55.904+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.652 seconds
+[2025-09-09T02:31:26.473+0000] {processor.py:161} INFO - Started process (PID=104) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:31:26.477+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:31:26.493+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:31:26.491+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:31:26.957+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:31:26.973+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:31:26.966+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:31:26.977+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:31:27.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.642 seconds
+[2025-09-09T02:31:57.614+0000] {processor.py:161} INFO - Started process (PID=105) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:31:57.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:31:57.633+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:31:57.631+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:31:58.036+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:31:58.048+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:31:58.041+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:31:58.050+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:31:58.189+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.591 seconds
+[2025-09-09T02:32:28.685+0000] {processor.py:161} INFO - Started process (PID=106) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:32:28.692+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:32:28.703+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:32:28.702+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:32:28.997+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:32:29.007+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:32:29.002+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:32:29.008+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:32:29.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.437 seconds
+[2025-09-09T02:32:59.974+0000] {processor.py:161} INFO - Started process (PID=107) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:32:59.984+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:33:00.014+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:32:59.998+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:33:01.080+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:33:01.096+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:33:01.088+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:33:01.098+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:33:01.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.292 seconds
+[2025-09-09T02:33:31.641+0000] {processor.py:161} INFO - Started process (PID=108) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:33:31.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:33:31.658+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:33:31.656+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:33:32.122+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:33:32.137+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:33:32.129+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:33:32.140+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:33:32.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.649 seconds
+[2025-09-09T02:34:02.398+0000] {processor.py:161} INFO - Started process (PID=109) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:34:02.402+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:34:02.413+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:34:02.412+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:34:02.771+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:34:02.785+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:34:02.779+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:34:02.787+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:34:02.945+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.561 seconds
+[2025-09-09T02:34:33.258+0000] {processor.py:161} INFO - Started process (PID=110) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:34:33.265+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:34:33.289+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:34:33.286+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:34:33.863+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:34:33.881+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:34:33.874+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:34:33.883+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:34:34.047+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.810 seconds
+[2025-09-09T02:35:04.556+0000] {processor.py:161} INFO - Started process (PID=111) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:35:04.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:35:04.574+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:35:04.572+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:35:04.928+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:35:04.941+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:35:04.936+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:35:04.943+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:35:05.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.565 seconds
+[2025-09-09T02:35:35.405+0000] {processor.py:161} INFO - Started process (PID=112) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:35:35.410+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:35:35.421+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:35:35.419+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:35:35.750+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:35:35.764+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:35:35.759+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:35:35.767+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:35:35.874+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.485 seconds
+[2025-09-09T02:36:06.235+0000] {processor.py:161} INFO - Started process (PID=113) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:36:06.237+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:36:06.243+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:36:06.242+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:36:06.413+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:36:06.420+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:36:06.416+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:36:06.421+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:36:06.489+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.266 seconds
+[2025-09-09T02:36:37.479+0000] {processor.py:161} INFO - Started process (PID=114) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:36:37.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:36:37.678+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:36:37.667+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:36:38.909+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:36:38.923+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:36:38.916+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:36:38.925+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:36:39.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.064 seconds
+[2025-09-09T02:37:09.547+0000] {processor.py:161} INFO - Started process (PID=115) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:37:09.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:37:09.578+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:37:09.575+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:37:10.437+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:37:10.456+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:37:10.444+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:37:10.458+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:37:10.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.114 seconds
+[2025-09-09T02:37:41.103+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:37:41.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:37:41.117+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:37:41.116+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:37:41.503+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:37:41.521+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:37:41.511+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:37:41.523+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:37:41.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.578 seconds
+[2025-09-09T02:38:12.299+0000] {processor.py:161} INFO - Started process (PID=117) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:38:12.308+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:38:12.323+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:38:12.322+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:38:12.830+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:38:12.845+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:38:12.839+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:38:12.848+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:38:13.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.734 seconds
+[2025-09-09T02:38:43.586+0000] {processor.py:161} INFO - Started process (PID=118) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:38:43.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:38:43.603+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:38:43.602+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:38:44.076+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:38:44.089+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:38:44.084+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:38:44.091+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:38:44.225+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.666 seconds
+[2025-09-09T02:39:14.580+0000] {processor.py:161} INFO - Started process (PID=119) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:39:14.586+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:39:14.605+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:39:14.602+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:39:15.034+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:39:15.046+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:39:15.041+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:39:15.048+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:39:15.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.643 seconds
+[2025-09-09T02:39:45.735+0000] {processor.py:161} INFO - Started process (PID=120) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:39:45.739+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:39:45.749+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:39:45.748+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:39:46.107+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:39:46.120+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:39:46.115+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:39:46.123+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:39:46.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.519 seconds
+[2025-09-09T02:40:16.615+0000] {processor.py:161} INFO - Started process (PID=121) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:40:16.620+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:40:16.630+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:40:16.629+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:40:17.022+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:40:17.035+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:40:17.029+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:40:17.036+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:40:17.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.552 seconds
+[2025-09-09T02:40:47.757+0000] {processor.py:161} INFO - Started process (PID=122) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:40:47.760+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:40:47.767+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:40:47.767+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:40:48.022+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:40:48.031+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:40:48.027+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:40:48.033+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:40:48.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.643 seconds
+[2025-09-09T02:41:18.756+0000] {processor.py:161} INFO - Started process (PID=123) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:41:18.760+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:41:18.765+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:41:18.765+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:41:18.988+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:41:19.000+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:41:18.994+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:41:19.006+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:41:19.078+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.331 seconds
+[2025-09-09T02:41:49.403+0000] {processor.py:161} INFO - Started process (PID=124) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:41:49.405+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:41:49.413+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:41:49.413+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:41:49.595+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:41:49.603+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:41:49.599+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:41:49.605+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:41:49.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.277 seconds
+[2025-09-09T02:42:19.731+0000] {processor.py:161} INFO - Started process (PID=125) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:42:19.733+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:42:19.741+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:42:19.740+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:42:19.965+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:42:19.972+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:42:19.969+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:42:19.973+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:42:20.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.307 seconds
+[2025-09-09T02:42:50.306+0000] {processor.py:161} INFO - Started process (PID=126) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:42:50.309+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:42:50.317+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:42:50.316+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:42:50.516+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:42:50.522+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:42:50.520+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:42:50.523+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:42:50.586+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.293 seconds
+[2025-09-09T02:43:20.829+0000] {processor.py:161} INFO - Started process (PID=127) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:43:20.832+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:43:20.839+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:43:20.838+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:43:21.089+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:43:21.098+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:43:21.094+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:43:21.101+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:43:21.177+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.360 seconds
+[2025-09-09T02:43:51.317+0000] {processor.py:161} INFO - Started process (PID=128) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:43:51.319+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:43:51.328+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:43:51.326+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:43:51.595+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:43:51.603+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:43:51.599+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:43:51.604+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:43:51.679+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.372 seconds
+[2025-09-09T02:44:22.038+0000] {processor.py:161} INFO - Started process (PID=129) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:44:22.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:44:22.052+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:44:22.050+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:44:22.403+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:44:22.414+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:44:22.409+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:44:22.417+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:44:22.856+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.831 seconds
+[2025-09-09T02:44:53.450+0000] {processor.py:161} INFO - Started process (PID=130) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:44:53.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:44:53.480+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:44:53.476+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:44:54.274+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:44:54.299+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:44:54.283+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:44:54.302+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:44:54.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.233 seconds
+[2025-09-09T02:45:25.519+0000] {processor.py:161} INFO - Started process (PID=131) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:45:25.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:45:25.554+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:45:25.550+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:45:26.592+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:45:26.610+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:45:26.599+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:45:26.613+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:45:26.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.454 seconds
+[2025-09-09T02:45:57.641+0000] {processor.py:161} INFO - Started process (PID=132) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:45:57.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:45:57.660+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:45:57.659+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:45:58.180+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:45:58.202+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:45:58.195+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:45:58.204+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:45:58.363+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.736 seconds
+[2025-09-09T02:46:28.587+0000] {processor.py:161} INFO - Started process (PID=133) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:46:28.593+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:46:28.608+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:46:28.606+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:46:28.964+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:46:28.976+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:46:28.971+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:46:28.978+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:46:29.094+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.522 seconds
+[2025-09-09T02:46:59.398+0000] {processor.py:161} INFO - Started process (PID=134) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:46:59.405+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:46:59.434+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:46:59.431+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:47:00.276+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:47:00.294+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:47:00.284+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:47:00.301+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:47:00.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.143 seconds
+[2025-09-09T02:47:30.853+0000] {processor.py:161} INFO - Started process (PID=135) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:47:30.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:47:30.872+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:47:30.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:47:31.239+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:47:31.257+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:47:31.250+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:47:31.260+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:47:31.398+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.564 seconds
+[2025-09-09T02:48:01.863+0000] {processor.py:161} INFO - Started process (PID=136) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:48:01.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:48:01.874+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:48:01.873+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:48:02.099+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:48:02.107+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:48:02.103+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:48:02.108+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:48:02.200+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.346 seconds
+[2025-09-09T02:48:32.576+0000] {processor.py:161} INFO - Started process (PID=137) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:48:32.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:48:32.600+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:48:32.599+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:48:32.870+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:48:32.877+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:48:32.873+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:48:32.879+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:48:32.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.386 seconds
+[2025-09-09T02:49:03.030+0000] {processor.py:161} INFO - Started process (PID=138) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:49:03.033+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:49:03.043+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:49:03.041+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:49:03.330+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:49:03.341+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:49:03.336+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:49:03.343+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:49:03.443+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.427 seconds
+[2025-09-09T02:49:33.813+0000] {processor.py:161} INFO - Started process (PID=139) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:49:33.816+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:49:33.826+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:49:33.825+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:49:34.168+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:49:34.181+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:49:34.177+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:49:34.183+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:49:34.285+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.486 seconds
+[2025-09-09T02:50:04.936+0000] {processor.py:161} INFO - Started process (PID=140) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:50:04.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:50:05.076+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:50:05.070+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:50:06.907+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:50:06.973+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:50:06.953+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:50:06.976+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:50:07.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.872 seconds
+[2025-09-09T02:50:38.162+0000] {processor.py:161} INFO - Started process (PID=141) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:50:38.167+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:50:38.174+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:50:38.173+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:50:38.638+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:50:38.646+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:50:38.642+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:50:38.649+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:50:38.764+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.614 seconds
+[2025-09-09T02:51:09.166+0000] {processor.py:161} INFO - Started process (PID=142) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:51:09.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:51:09.183+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:51:09.182+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:51:09.434+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:51:09.447+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:51:09.444+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:51:09.449+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:51:09.525+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.371 seconds
+[2025-09-09T02:51:39.945+0000] {processor.py:161} INFO - Started process (PID=143) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:51:39.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:51:39.961+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:51:39.960+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:51:40.310+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:51:40.320+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:51:40.315+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:51:40.324+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:51:40.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.517 seconds
+[2025-09-09T02:52:10.921+0000] {processor.py:161} INFO - Started process (PID=144) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:52:10.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:52:10.937+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:52:10.935+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:52:11.241+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:52:11.254+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:52:11.248+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+  File "/opt/airflow/pipeline/silver_orders.py", line 50
+    F.col("ingested_timestamp")
+    ^
+SyntaxError: invalid syntax
+[2025-09-09T02:52:11.256+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:52:11.362+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.455 seconds
+[2025-09-09T02:52:41.735+0000] {processor.py:161} INFO - Started process (PID=145) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:52:41.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-09T02:52:41.744+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:52:41.743+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-09T02:52:42.016+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-09T02:52:42.023+0000] {logging_mixin.py:188} INFO - [2025-09-09T02:52:42.020+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in pa
