@@ -1,7 +1,7 @@
 # creating a silver order delta table that enforces a defined schema 
 import pyspark
 from pyspark.sql import SparkSession
-from bronze_orders import bronze_path
+from pipeline.bronze_orders import bronze_path
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType, TimestampType
 import pyspark.sql.functions as F
 
@@ -46,7 +46,7 @@ def schema_enforment():
         F.col("parsed_json.price").alias("price"),
         F.col("parsed_json.currency").alias("currency"),
         F.col("parsed_json.event_datetime").alias("event_timestamp"),
-        F.col("parsed_json.channel").alias("channel")
+        F.col("parsed_json.channel").alias("channel"),
         F.col("ingested_timestamp")
     )
 
@@ -59,8 +59,9 @@ def schema_enforment():
     print("Delta table written to successfully")
 
     silver_orders = spark.read.format("delta").load(silver_path)
-    print(f"silver delta table head: {silver_orders.show()}")
+    print(f"silver delta table head: {silver_orders.show(5, truncate=True)}")
     print(f"silver delta table schema: {silver_orders.printSchema()}")
+
 
 if __name__ == '__main__':
     schema_enforment()
