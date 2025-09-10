@@ -2842,3 +2842,385 @@ Traceback (most recent call last):
 ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
 [2025-09-10T23:08:16.774+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
 [2025-09-10T23:08:16.885+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.572 seconds
+[2025-09-10T23:08:47.175+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:08:47.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:08:47.183+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:08:47.182+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:08:47.313+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:08:47.316+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:08:47.315+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:08:47.317+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:08:47.350+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.182 seconds
+[2025-09-10T23:09:17.733+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:09:17.736+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:09:17.750+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:09:17.747+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:09:18.066+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:09:18.072+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:09:18.069+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:09:18.073+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:09:18.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.410 seconds
+[2025-09-10T23:09:48.418+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:09:48.421+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:09:48.429+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:09:48.428+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:09:48.661+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:09:49.772+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:09:48.664+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:09:49.774+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:09:49.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.472 seconds
+[2025-09-10T23:10:19.969+0000] {processor.py:161} INFO - Started process (PID=190) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:10:19.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:10:19.976+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:10:19.975+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:10:21.648+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:10:21.680+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:10:21.661+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:10:21.683+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:10:21.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.891 seconds
+[2025-09-10T23:10:52.573+0000] {processor.py:161} INFO - Started process (PID=191) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:10:52.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:10:52.594+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:10:52.591+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:10:53.669+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:10:53.676+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:10:53.672+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_orders
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:10:53.677+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:10:53.749+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.196 seconds
+[2025-09-10T23:11:24.706+0000] {processor.py:161} INFO - Started process (PID=192) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:11:24.723+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:11:25.091+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:11:25.081+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:11:27.391+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:11:27.500+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:11:27.485+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_path, schema_enforment
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:11:27.504+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:11:27.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 3.185 seconds
+[2025-09-10T23:11:58.459+0000] {processor.py:161} INFO - Started process (PID=193) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:11:58.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:11:58.465+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:11:58.464+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:11:58.720+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:11:58.729+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:11:58.725+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_path, schema_enforment
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:11:58.731+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:11:58.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.370 seconds
+[2025-09-10T23:12:29.184+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:12:29.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:12:29.202+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:12:29.201+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:12:29.978+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:12:29.995+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:12:29.988+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_path, schema_enforment
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:12:29.997+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:12:30.196+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.032 seconds
+[2025-09-10T23:13:00.706+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:13:00.713+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:13:00.751+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:13:00.745+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:13:06.227+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:13:06.246+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:13:06.237+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_path, schema_enforment
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:13:06.250+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:13:06.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 5.764 seconds
+[2025-09-10T23:13:37.128+0000] {processor.py:161} INFO - Started process (PID=196) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:13:37.131+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:13:37.141+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:13:37.140+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:13:38.609+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:13:38.623+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:13:38.617+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_path, schema_enforment
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:13:38.626+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:13:38.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.706 seconds
+[2025-09-10T23:14:09.328+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:14:09.335+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:14:09.360+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:14:09.358+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:14:12.897+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:14:13.047+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:14:13.040+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_path, schema_enforment
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:14:13.050+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:14:13.220+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 3.930 seconds
+[2025-09-10T23:14:43.568+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:14:43.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:14:43.641+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:14:43.628+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:14:44.383+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:14:44.396+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:14:44.390+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_path, schema_enforment
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:14:44.399+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:14:44.528+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.079 seconds
+[2025-09-10T23:15:15.127+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:15:15.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:15:15.164+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:15:15.161+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:15:16.648+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:15:16.661+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:15:16.655+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 11, in <module>
+    from pipeline.silver_orders import silver_path, schema_enforment
+ImportError: cannot import name 'silver_orders' from 'pipeline.silver_orders' (/opt/airflow/pipeline/silver_orders.py)
+[2025-09-10T23:15:16.662+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:15:16.779+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.695 seconds
+[2025-09-10T23:15:46.890+0000] {processor.py:161} INFO - Started process (PID=200) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:15:46.893+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:15:46.900+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:15:46.899+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:15:49.258+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:15:49.351+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:15:49.328+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:15:49.357+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:15:49.876+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.993 seconds
+[2025-09-10T23:16:20.708+0000] {processor.py:161} INFO - Started process (PID=201) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:16:20.712+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:16:20.740+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:16:20.734+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:16:25.975+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:16:26.014+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:16:26.004+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:16:26.018+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:16:26.218+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 5.536 seconds
+[2025-09-10T23:16:56.775+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:16:56.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:16:56.783+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:16:56.782+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:16:57.349+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:16:57.364+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:16:57.360+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:16:57.366+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:16:57.440+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.675 seconds
+[2025-09-10T23:17:27.736+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:17:27.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:17:27.756+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:17:27.753+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:17:28.984+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:17:29.025+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:17:29.012+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:17:29.029+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:17:29.165+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.451 seconds
+[2025-09-10T23:17:59.866+0000] {processor.py:161} INFO - Started process (PID=204) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:17:59.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:17:59.927+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:17:59.924+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:18:00.882+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:18:00.919+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:18:00.909+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:18:00.923+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:18:01.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.239 seconds
+[2025-09-10T23:18:31.670+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:18:31.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:18:31.690+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:18:31.688+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:18:31.931+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:18:31.954+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:18:31.949+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:18:31.957+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:18:32.337+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.702 seconds
+[2025-09-10T23:19:02.999+0000] {processor.py:161} INFO - Started process (PID=206) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:19:03.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:19:03.007+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:19:03.006+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:19:05.145+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:19:05.191+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:19:05.177+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:19:05.195+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:19:05.414+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.425 seconds
+[2025-09-10T23:19:36.031+0000] {processor.py:161} INFO - Started process (PID=207) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:19:36.038+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:19:36.055+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:19:36.052+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:19:38.648+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:19:38.707+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:19:38.690+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:19:38.711+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:19:38.944+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.941 seconds
+[2025-09-10T23:20:09.923+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:20:09.929+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:20:09.941+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:20:09.939+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:20:10.969+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:20:10.996+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:20:10.986+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:20:10.998+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:20:11.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.166 seconds
+[2025-09-10T23:20:41.576+0000] {processor.py:161} INFO - Started process (PID=209) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:20:41.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:20:41.583+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:20:41.583+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:20:41.763+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:20:41.774+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:20:41.771+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:20:41.775+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:20:41.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.265 seconds
+[2025-09-10T23:21:12.405+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:21:12.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-09-10T23:21:12.461+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:21:12.457+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:21:13.448+0000] {logging_mixin.py:188} INFO - Pyspark version: 3.5.1
+[2025-09-10T23:21:13.497+0000] {logging_mixin.py:188} INFO - [2025-09-10T23:21:13.486+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline.py", line 12, in <module>
+    from ingestion.local_producer_host import purchase_event
+  File "/opt/airflow/ingestion/local_producer_host.py", line 1, in <module>
+    from confluent_kafka import Producer
+ModuleNotFoundError: No module named 'confluent_kafka'
+[2025-09-10T23:21:13.499+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-09-10T23:21:13.796+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline.py took 1.463 seconds

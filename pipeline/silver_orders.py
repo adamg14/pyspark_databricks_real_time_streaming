@@ -16,6 +16,7 @@ silver_schema =  StructType(
         StructField("channel", StringType())
     ]
 )
+
 silver_path = "data/delta/silver_orders"
 
 
