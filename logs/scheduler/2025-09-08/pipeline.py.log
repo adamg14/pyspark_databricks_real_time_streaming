@@ -606,3 +606,163 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'pipeline.bronze_orders'; 'pipeline' is not a package
 [2025-09-08T15:34:30.579+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
 [2025-09-08T15:34:30.659+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.186 seconds
+[2025-09-08T23:37:02.627+0000] {processor.py:161} INFO - Started process (PID=26) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:37:02.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:37:02.660+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:37:02.657+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:37:02.758+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:37:02.744+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+ModuleNotFoundError: No module named 'pipeline.bronze_orders'; 'pipeline' is not a package
+[2025-09-08T23:37:02.765+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:37:02.991+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.393 seconds
+[2025-09-08T23:37:33.719+0000] {processor.py:161} INFO - Started process (PID=27) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:37:33.725+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:37:33.741+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:37:33.739+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:37:33.820+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:37:33.806+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+ModuleNotFoundError: No module named 'pipeline.bronze_orders'; 'pipeline' is not a package
+[2025-09-08T23:37:33.823+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:37:34.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.362 seconds
+[2025-09-08T23:38:04.341+0000] {processor.py:161} INFO - Started process (PID=28) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:38:04.353+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:38:04.374+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:38:04.372+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:38:04.445+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:38:04.430+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+ModuleNotFoundError: No module named 'pipeline.bronze_orders'; 'pipeline' is not a package
+[2025-09-08T23:38:04.449+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:38:04.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.364 seconds
+[2025-09-08T23:38:35.752+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:38:35.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:38:36.294+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:38:36.263+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:38:36.684+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:38:36.674+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+ModuleNotFoundError: No module named 'pipeline.bronze_orders'; 'pipeline' is not a package
+[2025-09-08T23:38:36.687+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:38:36.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 1.240 seconds
+[2025-09-08T23:39:07.266+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:39:07.270+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:39:07.279+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:39:07.278+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:39:07.304+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:39:07.300+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+ModuleNotFoundError: No module named 'pipeline.bronze_orders'; 'pipeline' is not a package
+[2025-09-08T23:39:07.305+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:39:07.391+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.152 seconds
+[2025-09-08T23:39:38.638+0000] {processor.py:161} INFO - Started process (PID=31) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:39:38.667+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:39:38.759+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:39:38.745+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:39:39.312+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:39:39.290+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+ModuleNotFoundError: No module named 'pipeline.bronze_orders'; 'pipeline' is not a package
+[2025-09-08T23:39:39.318+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:39:39.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 1.510 seconds
+[2025-09-08T23:40:10.481+0000] {processor.py:161} INFO - Started process (PID=32) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:40:10.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:40:10.501+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:40:10.500+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:40:10.538+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:40:10.533+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+ModuleNotFoundError: No module named 'pipeline.bronze_orders'; 'pipeline' is not a package
+[2025-09-08T23:40:10.540+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:40:10.703+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.239 seconds
+[2025-09-08T23:40:41.829+0000] {processor.py:161} INFO - Started process (PID=33) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:40:41.848+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:40:41.870+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:40:41.869+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:40:42.767+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:40:42.675+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/pipeline/bronze_orders.py", line 3, in <module>
+    import pyspark
+ModuleNotFoundError: No module named 'pyspark'
+[2025-09-08T23:40:42.776+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:40:43.245+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 1.543 seconds
+[2025-09-08T23:41:15.158+0000] {processor.py:161} INFO - Started process (PID=34) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:41:15.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:41:15.201+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:41:15.197+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:41:15.381+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:41:15.367+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/pipeline/bronze_orders.py", line 3, in <module>
+    import pyspark
+ModuleNotFoundError: No module named 'pyspark'
+[2025-09-08T23:41:15.385+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:41:15.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.565 seconds
+[2025-09-08T23:41:45.902+0000] {processor.py:161} INFO - Started process (PID=35) to work on /opt/airflow/dags/pipeline.py
+[2025-09-08T23:41:45.910+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-09-08T23:41:45.924+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:41:45.923+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:41:45.989+0000] {logging_mixin.py:188} INFO - [2025-09-08T23:41:45.979+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 10, in <module>
+    from pipeline.bronze_orders import bronze_ingestion
+  File "/opt/airflow/pipeline/bronze_orders.py", line 3, in <module>
+    import pyspark
+ModuleNotFoundError: No module named 'pyspark'
+[2025-09-08T23:41:45.991+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2025-09-08T23:41:46.171+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.297 seconds

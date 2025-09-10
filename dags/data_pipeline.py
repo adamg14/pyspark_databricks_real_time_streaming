@@ -8,6 +8,8 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from pipeline.bronze_orders import bronze_ingestion
+from pipeline.silver_orders import silver_orders
+from ingestion.local_producer_host import purchase_event
 
 default_args = {
     "owner": "Adam Worede",
@@ -33,6 +35,7 @@ with DAG("data_pipeline",
         dag=dag
     )
     
+
     bronze_orders = PythonOperator(
         task_id = "bronze_orders",
         python_callable=bronze_ingestion,
