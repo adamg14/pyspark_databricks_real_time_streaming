@@ -21,7 +21,9 @@ def main():
         # syntax check for pipeline code
         ("python -m py_compile pipeline/*.py"),
         # syntax test for ingestion code
-        ("python -m py_compile ingestion/*.py")
+        ("python -m py_compile ingestion/*.py"),
+        # import test, to verify if imports are working correctly 
+        ("python -c \"import pipeline.bronze_orders; import pipeline.silver_orders; print('Imports OK')\"")
     ]
     
     for command in command_line_tests:
