@@ -72,6 +72,7 @@ services:
       - ./config:/opt/airflow/config
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./requirements.txt:/opt/airflow/requirements.txt
     command: >
       bash -c "airflow db init && 
       airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin"
@@ -96,6 +97,7 @@ services:
       - ./config:/opt/airflow/config
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./requirements.txt:/opt/airflow/requirements.txt
     ports:
       - "8081:8081"
     command: >
@@ -124,6 +126,7 @@ services:
       - ./config:/opt/airflow/config
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./requirements.txt:/opt/airflow/requirements.txt
     command: >
       bash -c "until airflow db check; do echo 'Waiting for database...'; sleep 5; done && 
       airflow scheduler"
@@ -150,6 +153,7 @@ services:
       - ./config:/opt/airflow/config
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./requirements.txt:/opt/airflow/requirements.txt
     command: >
       bash -c "until airflow db check; do echo 'Waiting for database...'; sleep 5; done && 
       celery worker"

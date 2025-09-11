@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 
 USER airflow
-RUN pip install pyspark==3.5.1 delta-spark==3.2.0
+RUN pip install -r ./requirements.txt
 
 
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
