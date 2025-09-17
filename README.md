@@ -9,6 +9,10 @@ This project takes simulated realtime purchase order data using an Apache Kafka 
 - *Pyspark* = Pyspark is used to build the distributed processing data pipeline. Subscribing to the Kafka topic, where purchase events are produced; Continously ingesting the messages via subscription and delta tables; data cleaning through medallion filtering
 - *Python* = Scripting to: simulated purchase events; run the Pyspark pipeline, Created an Apache Kafka producer
 
+
+# CI/CD Implementation
+Currently implementing CI/CD pipeline for this project using github workflow. Continous integration through testing the Pyspark code using parameterised testable code using the built in unittest module in Python that run on a pull request.
+Continous Deployment by uploading the Pyspark models to databricks, on the completion of tests defined in the continous integration workflow.
 ## Next steps 
 - Additional Medallion layers
 - Full Dockerisation 
